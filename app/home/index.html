@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="./home/index.css">
+</head>
+
+<h1>Hi {{vm.user.firstName}}!</h1>
+<h2>About The Ideator</h2>
+<br>
+The Ideator is a tool where you can create idea boards to explore word connections.
+Enter a word on the board and click on nodes to expand them with further searches.
+<br>
+Alternatively, add more words to the board that aren't already connected to existing
+words in some way - the Ideator will find any common connections that come up!
+<br>
+<br>
+<img src="/images/Bigger_Logo.png"/>
+<br>
+You can filter your searches on the <b>degree of connection</b> and the <b>number of word suggestions</b> you would like.
+<br>
+<br>
+<b>Degree of connection is defined as:</b>
+<ul>
+<li> 0 for <u>lateral connections</u> - those which are unusual and unexpected connections to the search word.</li>
+<li> 0.25 for connections that are more lateral than literal in their connection to the search word.</li>
+<li> 0.5 for connections that could be considered partially literal or lateral in their connection to the word.</li>
+<li> 0.75 for connections that are more literal than lateral in their connection to the search word.</li>
+<li> 1 for <u>literal connections</u> - those which are highly related and relevant to the search word.</li>
+</ul>
+<br>
+We hope you enjoy using this tool! Click on the <a href="/app/#/boards"><b> Idea Board</b></a> tab to get started.
+</br>
+</html>

@@ -1,0 +1,158 @@
+<style>
+
+#LearnMoreBtn {
+    cursor:pointer;
+    text-decoration:underline;
+    color:blue;
+}
+
+.modal-open{
+    cursor:pointer;
+    text-decoration:underline;
+    color:#4682B4;
+}
+
+#overlay {
+    display:none;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:#A9A9A9;
+    opacity:0.5;
+    z-index:99999;
+}
+
+#popup {
+    display:none;
+    position:fixed;
+    left:50%;
+    top:50%;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-left: -300px;
+    background: white;
+    border:1px solid #000;
+    z-index:100000;
+}
+
+#popupText {
+  text-align: left;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.board-options {
+    width: 750px;
+    height: 20px;
+}
+
+.board-options .form-one {
+    float: left; padding: 10px 30px 25px 25px;
+}
+
+.board-options .form-two {
+    float: left; padding: 10px 30px 25px 25px;
+}
+
+.board-options .form-three {
+    float: left; padding: 10px 30px 25px 25px;
+}
+
+.link-line {
+  fill: black;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+.node circle {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+d3-tip {
+    line-height: 1;
+    color: black;
+}
+.hidden>div {
+    display: none;
+
+}
+.visible>div {
+    display: inline;
+}
+
+#toolbar {
+    background: none repeat scroll #DCDCDC;
+    border-width: thick;
+    border-radius: 20px;
+    border-color: #808080;
+    position: fixed;
+    bottom: 0;
+    left: 150px;
+    width: 80%;
+    height: 12%;
+}
+
+.toolbar .toolbar-left {float: left; padding: 20px 00px 05px 20px;}
+.toolbar .toolbar-center {float: left; padding: 20px 00px 05px 25px;}
+.toolbar .toolbar-right {float: left; padding: 25px 00px 05px 25px;}
+.toolbar .toolbar-end {float: left; padding: 25px 0px 05px 15px;}
+.toolbar .toolbar-end-left {float: left; padding: 25px 0px 05px 25px;}
+.toolbar .toolbar-end-right {float: left; padding: 25px 0px 05px 25px;}
+.toolbar .toolbar-end-end {float: left; padding: 25px 0px 05px 25px;}
+
+#search input {display:inline-block}
+#product_id, #second_id, #b {
+   margin: 0px, 0px, 0px, 0px;
+}
+
+div.tooltip {
+    position: bottom;
+    float: bottom;
+    text-align: left;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #D3D3D3;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.download {
+  background: #333;
+  color: #FFF;
+  font-weight: 900;
+  border: 2px solid #B10000;
+  padding: 4px;
+  margin:4px;
+}
+</style>
